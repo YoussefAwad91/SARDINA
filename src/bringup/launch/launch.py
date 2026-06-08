@@ -89,6 +89,13 @@ def generate_launch_description():
         output='screen',
     )
 
+    vel_to_dist_node = Node(
+        package='navigation',
+        executable='vel_to_dist_node',
+        name='vel_to_dist_node',
+        output='screen',
+    )
+
     return LaunchDescription([
 
         delayed_rosbridge,
@@ -108,4 +115,6 @@ def generate_launch_description():
         gpio_bridge_node,
 
         music_player_node,
+
+        vel_to_dist_node,
     ])

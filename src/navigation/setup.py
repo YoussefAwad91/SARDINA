@@ -26,6 +26,7 @@ setup(
         'console_scripts': [
             'waypoint_node = navigation.waypoint_node:main',
             'arbiter_node = navigation.arbiter_node:main',
+            'vel_to_dist_node = navigation.vel_to_dist_node:main',
         ],
     },
 )
